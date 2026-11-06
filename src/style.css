@@ -57,3 +57,5 @@
 .status-icons svg:first-child,.status-icons svg:last-child{fill:currentColor;stroke:none}.status-icons svg:nth-child(2){fill:none;stroke:currentColor}.status-icons svg:first-child{width:15px;height:10px}.status-icons svg:last-child{width:19px;height:10px}
 .logo-mark{overflow:hidden}.logo-mark img{display:block;width:100%;height:100%;object-fit:cover}
 .logo-mark{border-radius:11px}
+.cta-section{position:relative}.cta-mascot{position:absolute;z-index:1;right:-28px;bottom:80px;width:260px;height:220px;overflow:hidden;pointer-events:none}.cta-mascot img{position:absolute;display:block;width:100%;height:auto;bottom:-55px}.cta-inner{isolation:isolate}@media(max-width:700px){.cta-mascot{right:-12px;width:125px;height:105px}.cta-mascot img{bottom:-30px}.cta-inner{padding-bottom:125px}}
+.feature-primary .feature-art{top:42%;right:auto;left:50%;transform:translate(-50%,-50%);width:200px;height:200px}@media(max-width:700px){.feature-primary .feature-art{top:43%;width:150px;height:150px}}
