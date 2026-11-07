@@ -59,3 +59,50 @@
 .logo-mark{border-radius:11px}
 .cta-section{position:relative}.cta-mascot{position:absolute;z-index:1;right:-28px;bottom:80px;width:260px;height:220px;overflow:hidden;pointer-events:none}.cta-mascot img{position:absolute;display:block;width:100%;height:auto;bottom:-55px}.cta-inner{isolation:isolate}@media(max-width:700px){.cta-mascot{right:-12px;width:125px;height:105px}.cta-mascot img{bottom:-30px}.cta-inner{padding-bottom:125px}}
 .feature-primary .feature-art{top:42%;right:auto;left:50%;transform:translate(-50%,-50%);width:200px;height:200px}@media(max-width:700px){.feature-primary .feature-art{top:43%;width:150px;height:150px}}
+
+/* Mobile layout refinements */
+@media (max-width: 700px) {
+  body { padding: 0; }
+  .shell { width: calc(100% - 36px); }
+  .nav { gap: 12px; }
+  .login-link { margin-left: auto; }
+  .menu-button { margin-left: 0; width: 44px; height: 44px; display: grid; place-items: center; }
+  .nav-links { z-index: 20; }
+  .hero { padding: 44px 0 48px; }
+  .hero h1 { font-size: clamp(42px, 11vw, 72px); overflow-wrap: normal; }
+  .hero-spark-left { left: 0; }
+  .hero-spark-right { right: 0; }
+  .button-row { gap: 10px; }
+  .button-row .button { flex: 1 1 190px; }
+  .feature-coverflow { min-height: 0; height: 370px; margin-top: 22px; }
+  .hero-bottom { margin-top: 12px; }
+  .section { padding: 64px 0; }
+  .section-head { margin-bottom: 30px; }
+  .feature-card h3, .feature-card > p { max-width: 72%; }
+  .feature-primary h3, .feature-primary > p { max-width: 100%; }
+  .app-showcase-art { min-width: 0; }
+  .footer-links { gap: 18px 24px; }
+}
+@media (max-width: 380px) {
+  .hero-bottom { align-items: flex-start; flex-direction: column; }
+  .feature-coverflow { --coverflow-width: 170px; --coverflow-gap: 115px; }
+  .app-float { max-width: 145px; }
+  .app-float b, .app-float small { overflow-wrap: anywhere; }
+}
+
+/* Keep the primary feature illustration in its own space. */
+.feature-primary .feature-art {
+  position: static;
+  transform: none;
+  align-self: center;
+  flex: none;
+  width: 160px;
+  height: 160px;
+  margin: 8px auto;
+}
+.feature-primary .preview-0 { position: relative; z-index: 1; }
+@media (max-width: 700px) {
+  .menu-button { margin-left: auto; }
+  .feature-primary .feature-art { width: 130px; height: 130px; margin: 8px auto; }
+  .feature-primary .preview-0 { margin-top: 0; }
+}
