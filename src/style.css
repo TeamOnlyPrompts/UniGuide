@@ -106,3 +106,12 @@
   .feature-primary .feature-art { width: 130px; height: 130px; margin: 8px auto; }
   .feature-primary .preview-0 { margin-top: 0; }
 }
+
+@media (max-width: 700px) {
+  .button-row { flex-wrap: nowrap; }
+  .button-row .button { flex: 1 1 0; min-width: 0; gap: 6px; padding: 0 10px; font-size: clamp(10px, 3vw, 13px); }
+  .button-row .button svg { flex: none; }
+  .hero-bottom { flex-direction: row; align-items: center; }
+  .hero-bottom > span { min-width: 0; }
+  .hero-bottom a { flex: none; }
+}
